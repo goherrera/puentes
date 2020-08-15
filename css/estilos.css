@@ -1,0 +1,140 @@
+body{
+    display: flexbox;
+    position:relative;
+}
+.navbar{
+    background: white;
+}
+.barra_navegacion{
+  justify-content: flex-end;
+}
+.barra_navegacion li{
+    margin-right: 30px;
+}
+.nav-link{
+    background: white;
+    transition: all;
+}
+.nav-link:hover{
+    color:white;
+    background: orange;
+    border-radius: 10px;
+    transition: 1s;
+}
+.active{
+    color:orange;   
+}
+.dropdown-menu{
+    background: orange;
+    border:none;
+    position:absolute;
+    left:-20px;
+    text-align: center;
+}
+.dropdown-menu a{
+    color:blue;
+}
+.dropdown-menu a:hover{
+    color:orange;
+}
+
+/****CUERPO PRINCIPAL ****/
+.fondo_principal{
+    background-image: url(../imagenes/fondo3.jpg);
+    background-position-y: -50px;
+    opacity: 1.5;
+    width: 100%;
+    background-repeat: none;
+    background-size: cover;
+    margin-right: 0px;
+    padding: 200px 0px;  
+}
+.row{
+    margin-right: 0px;
+    justify-content: center;
+}
+.cuerpo_principal{
+    margin-left: 200px;
+    padding:20px 0px;
+    text-align: center;
+}
+.cuerpo_principal h3{
+    color:white;
+    font-size: 40px;
+}
+.cuerpo_principal p{
+    width: 100%;
+    margin:20px auto;
+    color:white;
+    font-size: 20px;
+}
+#resaltador{
+    background: rgba(248, 166, 13, 0.842);
+    font-style: italic;
+    font-weight: 500;
+}
+
+/***** CALENDARIO ACTIVIDADES *****/
+.calendario{
+    position: relative;
+    width: max-content;
+    text-align: CENTER;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.boton_calendario{
+    padding: 10px;
+    margin-left: 100px;
+    font-size: 20PX;
+    background: grey;
+    border:none;
+    border-radius: 20px;
+}
+.boton_calendario:hover{
+    background:orange;
+    transition:2s;
+}
+.modal-title{
+    margin-left: 150px;
+}
+.modal-body{
+    background: grey;
+}
+.modal-body h4{
+    width: 50%;
+    color: orange;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin: 0 auto 5px auto;
+}
+.modal-body p{
+    color:white;
+}
+.modal-footer{
+    justify-content: space-between;
+}
+.boton_modal{
+    background: orange;
+    padding:5px;
+    border-radius: 20px;
+    color: white;
+}
+
+/***** FOOTER ******/
+footer{
+    width: 100%;
+    background: grey;
+    justify-content: center;
+    margin-top: 0px;
+}
+footer p{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+.logos_redes{
+    margin: 0px auto 5px auto;
+    font-size: 30px;
+    width: 15%;
+    justify-content: space-between;
+}
