@@ -40,9 +40,9 @@ body{
 
 /****CUERPO PRINCIPAL ****/
 .fondo_principal{
-    background-image: url(../imagenes/fondo3.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(231, 165, 78, 0.3)), url(../imagenes/fondo3.jpg);
     background-position-y: -50px;
-    opacity: 1.5;
+    opacity: 2.5;
     width: 100%;
     background-repeat: none;
     background-size: cover;
@@ -134,7 +134,128 @@ footer p{
 }
 .logos_redes{
     margin: 0px auto 5px auto;
-    font-size: 30px;
+    font-size: 25px;
     width: 15%;
     justify-content: space-between;
+    color: white;
+}
+
+#redes_sociales{
+    color: orange;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/*******QUIENES SOMOS ******/
+.bloques{
+    text-align: center;
+    margin-bottom: 10px solid orange;
+    
+}
+.bloque_why{
+    margin-top: -90px;
+    
+    margin-bottom: 0px;
+    padding-bottom: -200px;
+}
+.bloques p{
+    color:white;
+}
+#titulo_bloque{
+    width: 50%;
+    margin: 10px auto;
+    color: white;
+    background: rgba(255, 166, 0, 0.733);
+    padding: 30px 10px;
+    border-radius: 50%;
+}
+.bloque_staff{
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 0px 0px 100px 0px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.bloque_staff h3{
+    background:white;
+    width: 20%;
+    margin:0px auto 20px auto;
+    background-color: orange;
+
+}
+.cards_staff{
+    width: 100%;
+    margin-left: 0px;
+    padding:0px;
+    justify-content: space-between;
+}
+.cards_staff img{
+}
+.cards{
+    width:200px;
+    height: max-content;
+    margin:5px;
+    
+}
+.card-body h4{
+    font-size: 20px;
+    color: orange;
+}
+.card-body p{
+    font-size: 14px;
+}
+.cards img{
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+/*****COMUNIDAD *****/
+.fondo_blanco{
+    background: linear-gradient(to right, rgba(241, 231, 132, 0.6) ,rgb(248, 248, 15 ,0.4), rgb(241, 231, 132, 0.6));
+    width: 100%;
+    height:max-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.fondo_blanco h3{
+    width: max-content;
+    margin: 0px auto 30px auto;
+    background: orange;
+}
+.fondo_blanco img{
+    width: 150px;
+}
+
+.empresas{
+    width: 50%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.puentes_numeros{
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.puentes_numeros div{
+    text-align: center;
+    font-size: 30px;
+
+}
+.puentes_numeros h4{
+    color:orange;
+    font-size: 40px;
+}
+.puentes_numeros p{
+    font-size: 20px;
+}
+.bloque_numeros{
+    margin-top: 50px;
 }
