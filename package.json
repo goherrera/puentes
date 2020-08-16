@@ -1,0 +1,30 @@
+{
+  "name": "puentes",
+  "version": "1.0.0",
+  "description": "ultima version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goherrera/puentes.git"
+  },
+  "keywords": [
+    "puentes",
+    "desafios",
+    "coderhouse"
+  ],
+  "author": "gonzalo herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goherrera/puentes/issues"
+  },
+  "homepage": "https://github.com/goherrera/puentes#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
