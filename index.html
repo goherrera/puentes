@@ -11,10 +11,10 @@
 </head>
 <body>
     <!-------HEADER--------->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top header">
         <!-- Brand -->
         <a class="navbar-brand" href="#">
-            <img src="imagenes/logo2.png" alt="Logo" style="width:80px;">
+            <img class="navbar__logo" src="imagenes/logo2.png" alt="Logo">
         </a>
       
         <!-- Toggler/collapsibe Button -->
@@ -23,14 +23,14 @@
         </button>
       
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse barra_navegacion" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse navbar__indice" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">< home&#160;/></a>
             </li>
 
             <!----DROPDOWN CURSOS----->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown navbar__dropdown">
               <a class="nav-link dropdown-toggle" href="cursos.html" id="navbardrop" data-toggle="dropdown">
                 < cursos&#160;/>
               </a>
@@ -59,10 +59,10 @@
     
     <!--------CUERPO PRINCIPAL------->
 
-    <div class="row">
-      <div class='col-sm-12 fondo_principal'>
+    <div class="row cuerpoPrincipal">
+      <div class='col-sm-12 cuerpoPrincipal__fondo'>
        <div class='row'>
-         <div class='col-sm-6 cuerpo_principal'>
+         <div class='col-sm-6 cuerpoPrincipal__texto'>
             <h3>< conectando oportunidades&#160;/></h3>
             <p>Impulsamos una educación <span id='resaltador'>integral, colaborativa y accesible</span>, con el objetivo de reducir la brecha educativa y de empleabilidad en torno a las nuevas tecnologías.
            </p>
@@ -120,9 +120,9 @@
 
 
     <!-------FOOTER---------->
-    <footer class='fixed-bottom'>
-      <p> encontranos en nuestras <span id='redes_sociales'>redes sociales</span></p>
-      <div class='row logos_redes'>
+    <footer class='fixed-bottom footer'>
+      <p class='footer__texto'> encontranos en nuestras <span id='redes_sociales'>redes sociales</span></p>
+      <div class='row footer__logos'>
         <i class='fa fa-facebook-f'></i>
         <i class='fa fa-instagram'></i>
         <i class='fa fa-twitter'></i>

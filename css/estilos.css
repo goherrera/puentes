@@ -5,6 +5,15 @@ body{
 .navbar{
     background: white;
 }
+.navbar__logo{
+  width: 80px;
+}
+.navbar__indice{
+  justify-content: flex-end;
+}
+.navbar__indice li{
+  margin-right: 30px;
+}
 .barra_navegacion{
   justify-content: flex-end;
 }
@@ -39,7 +48,7 @@ body{
 }
 
 /****CUERPO PRINCIPAL ****/
-.fondo_principal{
+.cuerpoPrincipal__fondo{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(231, 165, 78, 0.3)), url(../imagenes/fondo3.jpg);
     background-position-y: -50px;
     opacity: 2.5;
@@ -52,6 +61,22 @@ body{
 .row{
     margin-right: 0px;
     justify-content: center;
+}
+
+.cuerpoPrincipal__texto{
+  margin-left: 200px;
+  padding:20px 0px;
+  text-align: center;
+}
+.cuerpoPrincipal__texto h3{
+  color:white;
+  font-size: 40px;
+}
+.cuerpoPrincipal__texto p{
+  width: 100%;
+  margin:20px auto;
+  color:white;
+  font-size: 20px;
 }
 .cuerpo_principal{
     margin-left: 200px;
@@ -122,6 +147,18 @@ body{
 }
 
 /***** FOOTER ******/
+.footer__texto{
+  text-align: center;
+  margin-top: 10px;
+  color: white
+}
+.footer__logos{
+    margin: 0px auto 5px auto;
+    font-size: 25px;
+    width: 15%;
+    justify-content: space-between;
+    color: white;
+}
 footer{
     width: 100%;
     background: grey;
@@ -299,38 +336,26 @@ footer p{
     font-weight: 700;
     letter-spacing: 1.4px;
   }
-  
-  .background {
+  .formularioContacto {
     display: flex;
     min-height: 100vh;
   }
   
-  .container {
+  .formularioContacto__container {
     flex: 0 1 700px;
     margin: auto;
     padding: 10px;
   }
   
-  .screen {
+  .formularioContacto__screen {
     position: relative;
     background: #3e3e3ead;
     border-radius: 15px;
   }
   
-  .screen:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    z-index: -1;
-  }
+
   
-  .screen-header {
+  .formularioContacto__screen-header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -339,19 +364,19 @@ footer p{
     border-top-right-radius: 15px;
   }
   
-  .screen-header-left {
+  .formularioContacto__screen-header-left {
     margin-right: auto;
   }
   
-  .screen-header-right {
+  .formularioContacto__screen-header-right {
     display: flex;
   }
   
-  .screen-body {
+  .formularioContacto__screen-body {
     display: flex;
   }
   
-  .screen-body-item {
+  .formularioContacto__screen-body-item {
     flex: 1;
     padding: 50px;
   }
@@ -361,7 +386,7 @@ footer p{
     flex-direction: column;
   }
   
-  .app-title {
+  .formularioContacto__app-title {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -369,7 +394,7 @@ footer p{
     font-size: 26px;
   }
   
-  .app-title:after {
+  .formularioContacto__app-title:after {
     content: '';
     display: block;
     position: absolute;
@@ -380,20 +405,20 @@ footer p{
     background: rgba(248, 246, 246, 0.836);
   }
   
-  .app-form-group {
+  .formularioContacto__app-form-group {
     margin-bottom: 15px;
   }
   
-  .app-form-group.message {
+  .formularioContacto__app-form-group.message {
     margin-top: 40px;
   }
   
-  .app-form-group.buttons {
+  .formularioContacto__app-form-group.buttons {
     margin-bottom: 0;
     text-align: right;
   }
   
-  .app-form-control {
+  .formularioContacto__app-form-control {
     width: 100%;
     padding: 10px 0;
     background: none;
@@ -406,15 +431,15 @@ footer p{
     transition: border-color .2s;
   }
   
-  .app-form-control::placeholder {
+  .formularioContacto__app-form-control::placeholder {
     color: rgba(248, 246, 246, 0.836);
   }
   
-  .app-form-control:focus {
+  .formularioContacto__app-form-control:focus {
     border-bottom-color: #ddd;
   }
   
-  .app-form-button {
+  .formularioContacto__app-form-button {
     background: none;
     border: none;
     color: orange;
@@ -422,39 +447,39 @@ footer p{
     cursor: pointer;
     outline: none;
   }
-  .app-form-button:hover{
+  .formularioContacto__app-form-button:hover{
     color: rgba(248, 246, 246, 0.836);
     transition:1s;
   }
   
   @media screen and (max-width: 520px) {
-    .screen-body {
+    .formularioContacto__screen-body {
       flex-direction: column;
     }
   
-    .screen-body-item.left {
+    .formularioContacto__screen-body-item.left {
       margin-bottom: 30px;
     }
   
-    .app-title {
+    .formularioContacto__app-title {
       flex-direction: row;
     }
   
-    .app-title span {
+    .formularioContacto__app-title span {
       margin-right: 12px;
     }
   
-    .app-title:after {
+    .formularioContacto__app-title:after {
       display: none;
     }
   }
   
   @media screen and (max-width: 600px) {
-    .screen-body {
+    .formularioContacto__screen-body {
       padding: 40px;
     }
   
-    .screen-body-item {
+    .formularioContacto__screen-body-item {
       padding: 0;
     }
   }
