@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puentes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/estilos.css'>
+    <link rel='stylesheet' href='css/prueba.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-------HEADER--------->
+<nav class="navbar navbar-expand-md fixed-top header">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+        <img class="navbar__logo" src="imagenes/logo2.png" alt="Logo">
+    </a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse navbar__indice" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">< home&#160;/></a>
+        </li>
+
+        <!----DROPDOWN CURSOS----->
+        <li class="nav-item dropdown navbar__dropdown">
+          <a class="nav-link dropdown-toggle" href="cursos.html" id="navbardrop" data-toggle="dropdown">
+            < cursos&#160;/>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="cursos.html">data science</a>
+            <a class="dropdown-item" href="cursos.html">desarrollo web</a>
+            <a class="dropdown-item" href="cursos.html">diseño ux</a>
+          </div>
+        </li>
+        <!-----FIN DROPDOWN------>
+
+        <li class="nav-item">
+          <a class="nav-link" href="quienes_somos.html">< quienes somos&#160;/></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comunidad.html">< nuestra comunidad&#160;/></a>
+        </li>
+        <li class="nav-item" style="margin-right:0px;">
+            <a class="nav-link" href="contacto.html">< contacto&#160;/></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!-------FIN HEADER-------->   
+
+<div class="wrapper">
+    <form class="login">
+      <p class="title">Log in</p>
+      <input type="text" placeholder="Username" autofocus/>
+      <i class="fa fa-user"></i>
+      <input type="password" placeholder="Password" />
+      <i class="fa fa-key"></i>
+      <a href="#">Forgot your password?</a>
+      <button>
+        <i class="spinner"></i>
+        <span class="state">Log in</span>
+      </button>
+    </form>
+    <footer><a target="blank" href="http://boudra.me/">boudra.me</a></footer>
+    </p>
+  </div>
+
+
+</body>
+</html>

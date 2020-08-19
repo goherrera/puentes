@@ -93,12 +93,14 @@ body{
     color:white;
     font-size: 20px;
 }
+/****
 #resaltador{
-    background: rgba(248, 166, 13, 0.842);
+    background: $resaltador;
     color:white;
     font-style: italic;
     font-weight: 500;
 }
+*****/
 
 /***** CALENDARIO ACTIVIDADES *****/
 .calendario{
@@ -157,7 +159,7 @@ body{
     font-size: 25px;
     width: 15%;
     justify-content: space-between;
-    color: white;
+
 }
 footer{
     width: 100%;
@@ -175,7 +177,7 @@ footer p{
     font-size: 25px;
     width: 15%;
     justify-content: space-between;
-    color: white;
+    
 }
 
 #redes_sociales{
@@ -186,28 +188,14 @@ footer p{
 
 
 /*******QUIENES SOMOS ******/
-.bloques{
-    text-align: center;
-    margin-bottom: 10px solid orange;
-    
-}
+
 .bloque_why{
     margin-top: -90px;
     
     margin-bottom: 0px;
     padding-bottom: -200px;
 }
-.bloques p{
-    color:white;
-}
-#titulo_bloque{
-    width: 50%;
-    margin: 10px auto;
-    color: white;
-    background: rgba(255, 166, 0, 0.733);
-    padding: 30px 10px;
-    border-radius: 50%;
-}
+
 .bloque_staff{
     width: 100%;
     text-align: center;
@@ -261,8 +249,16 @@ footer p{
 }
 
 /*****COMUNIDAD *****/
+.navbar-toggler{
+  color:black;
+}
 .fondo_blanco{
-    background: linear-gradient(to right,rgba(248, 174, 15, 0.8), rgb(241, 231, 132, 0.5),rgb(241, 231, 132, 0.5),rgb(248, 174, 15, 0.8));
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.5)), url(../imagenes/fondo.jpg);
+    opacity:1.5;
+    background-repeat: none;
+    background-size:cover;
+    background-position-x: -500px;
+    
     width: 100%;
     height:max-content;
     padding-top: 100px;
@@ -284,6 +280,7 @@ footer p{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+
 }
 .puentes_numeros{
     width: 50%;
@@ -511,12 +508,17 @@ footer p{
     text-align: center;
     justify-content: space-between;
   }
+
+  /******
   .card_cursos{
     width: 300px;
     height: max-content;
     padding: 20px;
     background:rgba(255, 166, 0, 0.74);
   }
+  ********/
+
+
   .card_cursos h3{
     margin-top:20px;
     font-size:20px;
@@ -528,10 +530,13 @@ footer p{
     font-size:13px;
     font-weight: 400;
   }
+  /*****
   .card_cursos img{
     width: 100%;
     height: 50%;
   }
+  ******/
+
   .card_cursos div i{
     font-size: 20px;
     margin-bottom: 20px;

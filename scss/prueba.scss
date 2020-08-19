@@ -1,4 +1,63 @@
-body{
-    background: yellow;
-    font-size: 14px;
+$colorResaltador: rgba(248, 166, 13, 0.842);
+$ancho: 300px;
+$largo: max-content;
+$colorFondo:rgba(255, 166, 0, 0.74); 
+$alineadoTexto: center;
+$colorTexto:white;
+
+@for $cursos from 1 through 3{
+    .fotos_cursos-#{$cursos}{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+#resaltador{
+    background: $colorResaltador;
+    color:white;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/****** BLOQUE CARD CURSOS ****/
+.card_cursos{
+    width: $ancho;
+    height: $largo;
+    background: $colorFondo;
+}
+/****** FIN CARD CURSOS ****/
+
+/****** BLOQUES QUIENES_SOMOS.HTML ****/
+
+.bloques{
+    text-align: center;
+    p{
+        color:$colorTexto
+    }
+    #titulo_bloque{
+        width: 50%;
+        margin: 10px auto;
+        color: $colorTexto;
+        background: $colorResaltador;
+        padding: 30px 10px;
+        border-radius: 50%;
+    }
+}
+
+/******FIN BLOQUES QUIENES_SOMOS.HTML ****/
+
+
+/****MAPS REDES *****/
+
+$redes:(
+    facebook:rgb(229, 229, 250),
+    instagram: rgb(255, 166, 0),
+    twitter: rgb(229, 229, 250) ,
+    youtube: rgb(255, 166, 0),
+);
+
+@each $red, $color in $redes{
+    .color--#{$red}{
+        color:$color;
+    }
 }
