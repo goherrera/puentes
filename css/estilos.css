@@ -554,3 +554,18 @@ footer p{
     height: 3px;
     background: rgba(248, 246, 246, 0.836);
   }
+  #aparece{
+    position:absolute;
+    background-color:orange;
+    right: 0;
+    width: 0;
+    animation: aparece 4s steps(28);
+}
+@keyframes aparece {
+  from{
+      width: 100%;
+  }
+  to{
+      width: 0;
+  }
+}
