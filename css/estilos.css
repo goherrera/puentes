@@ -293,6 +293,15 @@ footer p{
     font-size: 30px;
 
 }
+.empresas{
+  width: 50%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font: 20px;
+
+}
 .puentes_numeros h4{
     color:orange;
     font-size: 40px;
@@ -449,6 +458,275 @@ footer p{
     transition:1s;
   }
   
+
+  /***** RESPONSIVE ****/ 
+
+  @media screen and (max-width:766px){
+    
+    .navbar-toggler{
+      border: 1px solid black;
+    }
+    .navbar-toggler-icon{
+      width:0px;
+
+    }
+  }
+  @media screen and (max-width:1156px){
+    .calendario{
+      visibility: hidden;
+    }
+    .cuerpoPrincipal__fondo{
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(231, 165, 78, 0.3)), url(../imagenes/fondo3.jpg);
+      background-position-y: 25px;
+      opacity: 2.5;
+      width: 100%;
+      background-repeat: none;
+      background-size: cover;
+      margin-right: 0px;
+      padding: 70px 45px 120px 0px;  
+    }
+      .cuerpoPrincipal__texto h3{
+      width: 100%;
+      margin-left:10px;
+      margin-right: auto;
+      color:white;
+      font-size: 28px;
+    }
+  }
+  /**** CELULAR *****/
+
+  @media screen and (max-width: 576px){
+
+
+    .navbar-toggler{
+      border: 1px solid black;
+
+    }
+    .navbar__logo{
+      width: 60px;
+    }
+    .navbar-toggler-icon{
+      color:white;
+      padding:0px;
+      margin:0px;
+      width:0px;      
+    }
+    .button.navbar-toggler{
+      margin-left: 5px;
+      text-align: center;
+      padding-left: 4px;
+      padding-right: 4px;
+      width: 30px;
+      height: 25px;
+      border-right-width: 0px;
+      border-left-width: 0px;
+    }
+    .cuerpoPrincipal__fondo{
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(231, 165, 78, 0.3)), url(../imagenes/fondo3.jpg);
+      background-position-y: 25px;
+      opacity: 2.5;
+      width: 100%;
+      background-repeat: none;
+      background-size: cover;
+      margin-right: 0px;
+      padding: 70px 0px 120px 0px;  
+    }
+    .row{
+      margin-right: 0px;
+      justify-content: center;
+    }
+    .cuerpoPrincipal__texto{
+      margin-left: 0px;
+      padding:100px 0px 0px 0px;
+      text-align: center;
+      justify-items: center;
+    }
+    .cuerpoPrincipal__texto h3{
+      width: 100%;
+      margin-left:10px;
+      margin-right: auto;
+      color:white;
+      font-size: 18px;
+    }
+    .cuerpoPrincipal__texto p{
+      width: 70%;
+      margin:20px auto;
+      color:white;
+      font-size: 12px;
+    }
+    .calendario{
+        visibility: hidden;
+        padding:0px;
+        margin:0px;
+    }
+    .footer__texto{
+      text-align: center;
+      margin-top: 10px;
+      color: white;
+      font-size: 10px;
+    }
+    .footer__logos{
+        margin: 0px auto 5px auto;
+        font-size: 15px;
+        width: 20%;
+        justify-content: space-between;
+    
+    }
+    footer{
+        width: 100%;
+        background: grey;
+        justify-content: center;
+        margin-top: 0px;
+        position: fixed;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+    }
+    .logos_redes{
+        margin: 0px auto 5px auto;
+        font-size: 10px;
+        width: 15%;
+        justify-content: space-between;     
+    }
+    #redes_sociales{
+        color: orange;
+        font-style: italic;
+        font-weight: 600;
+    }
+    #aparece{
+      visibility: hidden;
+    }
+    .puentes_numeros{
+      width: 50%;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .puentes_numeros div{
+      text-align: center;
+      font-size: 15px;
+  
+  }
+  .puentes_numeros h4{
+      color:orange;
+      font-size: 30px;
+  }
+  .puentes_numeros p{
+      font-size: 15px;
+  }
+  .bloque_numeros{
+      margin-top: 50px;
+  }
+  .row.empresas{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  }
+
+  /**** FIN CELULAR *****/
+ 
+  /**** INICIO TABLET *****/
+  @media screen and (max-width: 890px){
+
+    .navbar__logo{
+      width: 60px;
+    }
+    .navbar__indice li{
+      margin-right: 15px;
+    }
+    .barra_navegacion{
+      justify-content: flex-end;
+    }
+    .barra_navegacion li{
+        margin-right: 15px;
+    }
+    .navbar__dropdown a{
+      font-size:10px;
+    }
+    .dropdown-menu a{
+      font-size:10px;
+    }
+    .nav-link{
+      font-size:10px;
+    }
+    .footer__texto{
+      text-align: center;
+      margin-top: 10px;
+      color: white;
+      font-size: 15px;
+    }
+    .footer__logos{
+        margin: 0px auto 5px auto;
+        font-size: 20px;
+        width: 30%;
+        justify-content: space-between;
+    
+    }
+    footer{
+        width: 100%;
+        background: grey;
+        justify-content: center;
+        margin-top: 0px;
+        position: fixed;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 15px;
+        color: white;
+    }
+
+    #redes_sociales{
+        color: orange;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .cuerpoPrincipal__fondo{
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(231, 165, 78, 0.3)), url(../imagenes/fondo3.jpg);
+      background-position-y: 25px;
+      opacity: 2.5;
+      width: 100%;
+      background-repeat: none;
+      background-size: cover;
+      margin-right: 0px;
+      padding: 70px 10px 120px 0px;  
+    }
+
+    .cuerpoPrincipal__texto{
+      margin-left: 0px;
+      padding:100px 0px 0px 0px;
+      text-align: center;
+      justify-items: center;
+    }
+    .cuerpoPrincipal__texto h3{
+      width: 100%;
+      margin-left:10px;
+      margin-right: auto;
+      color:white;
+      font-size: 22px;
+    }
+    .cuerpoPrincipal__texto p{
+      width: 70%;
+      margin:20px auto;
+      color:white;
+      font-size: 14px;
+    }
+    .calendario{
+      margin-left: -75px;
+      padding:0px;
+    }
+    #aparece{
+      visibility: hidden;
+    }
+    
+    
+
+
+  /****FIN TABLET *****/
+  }
+
+
   @media screen and (max-width: 520px) {
     .formularioContacto__screen-body {
       flex-direction: column;
